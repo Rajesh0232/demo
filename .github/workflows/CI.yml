@@ -1,18 +1,34 @@
-name: First_Workflow
-on: workflow_dispatch
-jobs:
-  first_job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: print greeting
-        run: echo "Hai Ram"
-      - name: say Hello
-        run: echo "Hello"
-  Second_job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Stage1
-        run: echo "who are you?"
-      - name: Stage2
-        run: echo "where is Ram"
-      
+- name: First_Workflow
+  on: workflow_dispatch
+  jobs:
+    first_job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: print greeting
+          run: echo "Hai Ram"
+        - name: say Hello
+          run: echo "Hello"
+    Second_job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Stage1
+          run: echo "who are you?"
+        - name: Stage2
+          run: echo "where is Ram
+- name: Second
+  on: workflow_dispatch
+  jobs:
+    first1_job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: print greeting
+          run: echo "Hai Ram"
+        - name: say Hello
+          run: echo "Hello"
+    Second2_job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Stage1
+          run: echo "who are you?"
+        - name: Stage2
+          run: echo "where is Ram"
